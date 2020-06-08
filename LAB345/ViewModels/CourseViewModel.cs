@@ -12,7 +12,7 @@ namespace LAB345.ViewModels
         [Required]
         public string Place { get; set; }
         [Required]
-        [FutureDate]
+        [FutureDate] 
         public string Date { get; set; }
         [Required]
         [ValidTime]
