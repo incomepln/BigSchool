@@ -21,10 +21,9 @@ namespace LAB345.Controllers
                 .Include(c => c.Lecturer)
                 .Include(c => c.Category)
                 .Where(c => c.DateTime > DateTime.Now);
+            
             return View(upcomingCourses);
         }
-      
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
